@@ -1,0 +1,12 @@
+<p>Task 1. For the first code...."Following is Depth First Traversal (starting from vertex 2) 2 0 1 3" is displayed.</p>
+<p>Task 2. For the second code "Following is Breadth First Traversal (starting from vertex 2) 2 0 3 1" is displayed.</p>
+<p>Task 3.&nbsp;</p>
+<p>public boolean isConnected() {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Vertex rootD = this.list.get(0);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; visited(rootD);<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int unmarked = 0;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for (Vertex element : this.list) {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (element.getMarked() == false) {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; unmarked++;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (unmarked &gt; 0) {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return false;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return true;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>Task 4.&nbsp;</p>
+<p>public boolean isCyclicGraph{</p>
+<p>&nbsp; boolean[] visitedVertex = new boolean[V];&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; boolean[] recursionStack = new boolean[V];&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; for(int i = 0; i&lt;V; i++){&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(isCyclicGraphHelper(i, visitedVertex, recursionStack)){<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return true;&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; return false;</p>
+<p>}</p>
